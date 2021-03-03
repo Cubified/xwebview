@@ -6,9 +6,9 @@ An X server viewer for the browser.  Similar to VNC, but aiming for lower latenc
 
 ### Demo
 
-(Recorded on a very scaled-down window to keep filesize small)
+(Framerate and resolution limited for filesize, see [demo.mp4](https://github.com/Cubified/xwebview/blob/main/demo.mp4) for original [but still low-res] recording)
 
-![Demo](https://github.com/Cubified/xwebview/blob/main/demo.mp4)
+![Demo](https://github.com/Cubified/xwebview/blob/main/demo.gif)
 
 ### Compiling
 
