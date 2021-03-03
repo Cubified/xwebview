@@ -1,0 +1,11 @@
+{
+  "name": "xwebview",
+  "version": "1.0.0",
+  "description": "X server viewer for the browser",
+  "main": "client/app.js",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "lz4-asm": "^0.4.2"
+  }
+}

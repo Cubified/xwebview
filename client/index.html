@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>xwebview</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #333;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+      canvas {
+        transition: opacity 0.3s;
+      }
+      .monitor-button {
+        position: fixed;
+        width: 50px;
+        height: 100vh;
+        top: 0;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0);
+        z-index: 999;
+        outline: 0;
+        user-select: none;
+        cursor: pointer;
+        transition: background 0.2s;
+        color: white;
+      }
+      .monitor-button:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .monitor-button:active {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .monitor-button:disabled {
+        opacity: 0.2 !important;
+      }
+      .monitor-button:disabled:hover {
+        background: transparent !important;
+      }
+      .monitor-button:disabled:active {
+        background: transparent !important;
+      }
+      #monitor-left {
+        left: 0;
+      }
+      #monitor-right {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="monitor-button" id="monitor-left"><i class="fas fa-arrow-left"></i></button>
+    <button class="monitor-button" id="monitor-right"><i class="fas fa-arrow-right"></i></button>
+    <canvas id="canv"></canvas>
+    <script src="lz4wasm.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
